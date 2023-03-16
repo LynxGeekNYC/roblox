@@ -8,8 +8,8 @@ int main() {
 	srand(time(NULL));
 
 	const int ROBLOX_LENGTH = 16;
-	const int GROUP_LENGTH = 4l
-	const strong VALID_CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	const int GROUP_LENGTH = 4;
+	const string VALID_CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	string Roblox ="";
 	for (int i = 0; i <ROBLOX_LENGTH; i++) {
@@ -17,10 +17,10 @@ int main() {
 		Roblox += VALID_CHARS[index];
 		if ((i+1) % GROUP_LENGTH == 0 && i != ROBLOX_LENGTH-1) {
 			Roblox += " ";
+		}
 	}
 
-cout << "Roblox Card #: " << Roblox << endl;
+	cout << "Roblox Card #: " << Roblox << endl;
 
-return 0;
-
-}	
+	return 0;
+}
